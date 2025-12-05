@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,8 +44,8 @@
   /* IMPORTANT: Styling for images inside the collage items */
   .collage-item img {
     width: 100%; /* Fill the column width */
-    max-height: 400px; /* NEW: Prevents images from getting too tall */
-    object-fit: contain; /* NEW: Keeps image aspect ratio */
+    max-height: 250px; /* FIXED: Reduced max height to 250px */
+    object-fit: scale-down; /* NEW: Shrinks image to fit without cropping */
   }
   
   /* Responsive: 2 columns on tablets */
