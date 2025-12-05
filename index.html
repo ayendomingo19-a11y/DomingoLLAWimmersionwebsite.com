@@ -58,20 +58,10 @@ h3 {color:#ff4da6; font-style: italic;}
 /* Footer */
 footer {background:#fafafa;border-radius:20px;}
 
-/* CSS FOR TASK SECTION IMAGES (FIXED SIZE) */
-.task-img {
-  width: 100%;      /* Fill card horizontally */ 
-  max-height: 180px; /* Fixed height for clean layout */
-  object-fit: cover; /* Crucial: Crop to fit without stretching the card */
-  display: block;    
-  margin: 0 auto 5px auto;
-  border-radius: 5px;
-}
-
-/* CSS FOR OTHER SECTION IMAGES (FIXED SIZE) */
+/* CSS FOR TASK/CONTEST/FUN SECTION IMAGES */
 .section-img {
     width: 100%; 
-    height: 250px; /* Fixed height for consistency */
+    height: 250px; /* Consistent height for neat cards */
     object-fit: cover; /* Crop to fit cleanly */
     border-radius: 5px;
     margin-bottom: 10px;
@@ -109,58 +99,70 @@ id="mySidebar">
 <h2 class="w3-center" id="tasks"><b>My Immersion Tasks</b></h2>
     
 
-<div class="w3-row-padding w3-padding-16 w3-center">
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Checking & Frequency of Error</b></h3>
-    <img src="checking.jpg" class="task-img">
-    <p>Checked answer sheets, verified answer keys, and calculated student error frequency to improve lessons.</p>
+<div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom w3-card w3-hover-shadow">
+    <div class="w3-container">
+      <h3><b>Checking & Frequency of Error</b></h3>
+      <img src="checking.jpg" class="section-img">
+      <p>Checked answer sheets, verified answer keys, and calculated student error frequency to improve lessons.</p>
+    </div>
   </div>
 
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Grading & Masterlists</b></h3>
-    <img src="spreadsheet.PNG" class="task-img">
-    <p>Graded assignments, updated records, and organized masterlists using Excel and Google Sheets.</p>
+    <div class="w3-third w3-margin-bottom w3-card w3-hover-shadow">
+    <div class="w3-container">
+      <h3><b>Grading & Masterlists</b></h3>
+      <img src="spreadsheet.PNG" class="section-img">
+      <p>Graded assignments, updated records, and organized masterlists using Excel and Google Sheets.</p>
+    </div>
   </div>
 
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Collecting & Sorting Outputs</b></h3>
-    <img src="file management.jpg" class="task-img">
-    <p>Collected, sorted, and organized daily class outputs to maintain teacher workflow.</p>
+    <div class="w3-third w3-margin-bottom w3-card w3-hover-shadow">
+    <div class="w3-container">
+      <h3><b>Collecting & Sorting Outputs</b></h3>
+      <img src="file management.jpg" class="section-img">
+      <p>Collected, sorted, and organized daily class outputs to maintain teacher workflow and accountability.</p>
+    </div>
   </div>
 
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Classroom Assistance</b></h3>
-    <img src="report to maam Abayon.jpg" class="task-img">
-    <p>Assisted teachers with tasks, monitored activities, and supported classroom operations.</p>
+    <div class="w3-third w3-margin-bottom w3-card w3-hover-shadow">
+    <div class="w3-container">
+      <h3><b>Classroom Assistance</b></h3>
+      <img src="report to maam Abayon.jpg" class="section-img">
+      <p>Assisted teachers with in-class tasks, monitored activities, and supported general classroom operations.</p>
+    </div>
   </div>
+
+    <div class="w3-third w3-margin-bottom w3-card w3-hover-shadow">
+    <div class="w3-container">
+      <h3><b>Collaboration with Others</b></h3>
+      <img src="me and ally.jpg" class="section-img">
+      <p>Worked with fellow interns to coordinate tasks, share effective strategies, and improve overall workflow efficiency.</p>
+    </div>
+  </div>
+
+    <div class="w3-third w3-margin-bottom w3-card w3-hover-shadow">
+    <div class="w3-container">
+      <h3><b>Scholarships & Applications</b></h3>
+      <img src="DOST.jpg" class="section-img">
+      <p>Researched and submitted scholarship applications (including DOST) to enhance personal and academic growth.</p>
+    </div>
+  </div>
+
+    <div class="w3-third w3-margin-bottom w3-card w3-hover-shadow">
+    <div class="w3-container">
+      <h3><b>Graphic Design & Layout</b></h3>
+      <img src="canva layout.PNG" class="section-img">
+      <p>Designed posters, presentations, and layouts using tools like Canva and PowerPoint for school events and needs.</p>
+    </div>
+  </div>
+
 </div>
-
-<div class="w3-row-padding w3-padding-16 w3-center">
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Collaboration with Other Immersionists</b></h3>
-    <img src="me and ally.jpg" class="task-img">
-    <p>Worked with fellow interns to coordinate tasks, share strategies, and improve efficiency.</p>
-  </div>
-
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Scholarships & Applications</b></h3>
-    <img src="DOST.jpg" class="task-img">
-    <p>Researched and submitted scholarship applications to enhance personal and academic growth.</p>
-  </div>
-
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Graphic Design & Layout</b></h3>
-    <img src="canva layout.PNG" class="task-img">
-    <p>Designed posters, presentations, and layouts using Canva and PowerPoint for school events.</p>
-  </div>
-</div>
-
 <div class="w3-padding-32">
       <h4><b>A Student Intern from STEC</b></h4>
       <h6><i>Dedicated, Organized, and Eager to Learn</i></h6>
       <p>
-        Hi! My name is Ayenne Samuelle N. Domingo, from Grade 12- HUMMS LAW. I aspire to be first a proffesional teacher 
-        in SPED OR ECE then become an attorney somedayI am a senior high school student from the Science and Technology Education Center (STEC). 
+        Hi! My name is Ayenne Samuelle N. Domingo, from Grade 12- HUMMS LAW. I aspire to be first a professional teacher 
+        in SPED OR ECE then become an attorney someday. I am a senior high school student from the Science and Technology Education Center (STEC). 
         Through immersion, I developed real-world skills in documentation, grading, professionalism, 
         and communication. My tasks helped me understand what it means to work in an educational environment, 
         collaborate with teachers, and support academic operations efficiently.
