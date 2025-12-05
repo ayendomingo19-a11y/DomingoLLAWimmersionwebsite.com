@@ -58,11 +58,11 @@ h3 {color:#ff4da6; font-style: italic;}
 /* Footer */
 footer {background:#fafafa;border-radius:20px;}
 
-/* CSS FOR TASK/CONTEST/FUN SECTION IMAGES */
+/* CSS FOR ALL IMAGES IN CARDS (TASKS, CONTESTS, FUN) */
 .section-img {
     width: 100%; 
-    height: 250px; /* Consistent height for neat cards */
-    object-fit: cover; /* Crop to fit cleanly */
+    height: 120px; /* FIXED: Reduced height to 120px to fit cards cleanly */
+    object-fit: cover; /* Crucial: Crops the image to fill the space without stretching the card */
     border-radius: 5px;
     margin-bottom: 10px;
 }
@@ -244,3 +244,4 @@ function w3_close(){document.getElementById("mySidebar").style.display="none";}
 
 </body>
 </html>
+
