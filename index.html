@@ -13,237 +13,277 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif}
 
 /* Softer multi‑pastel gradient */
 body {
-  background: linear-gradient(180deg, #fdf2f8, #e0f7fa, #f3e8ff);
-  background-attachment: fixed;
+  background: linear-gradient(180deg, #fdf2f8, #e0f7fa, #f3e8ff);
+  background-attachment: fixed;
 }
 
 /* Animated fade-in for sections */
 .fade {
-  animation: fadeIn 1.2s ease;
+  animation: fadeIn 1.2s ease;
 }
 @keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}
+  from {opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}
 }
 
 /* Title styling */
 h2, h3 {
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 h2 {color:#7b4bff;}
 h3 {color:#ff4da6; font-style: italic;}
 
 /* Soft cards */
 .w3-card {
-  border-radius: 18px;
-  box-shadow: 0 4px 15px rgba(150,150,150,0.15);
-  transition: transform .2s;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(150,150,150,0.15);
+  transition: transform .2s;
 }
 .w3-card:hover {transform: translateY(-6px);}
 
 /* Multicolor nav buttons */
 .big-nav-buttons a {
-  display:inline-block;padding:18px 36px;margin:10px;font-size:22px;
-  border-radius:16px;text-decoration:none;color:#333;font-weight:600;
-  background:linear-gradient(45deg,#ffd6ec,#e0f7fa,#f3e8ff);
-  box-shadow:0 4px 10px rgba(0,0,0,0.12);
-  transition:.3s;
+  display:inline-block;padding:18px 36px;margin:10px;font-size:22px;
+  border-radius:16px;text-decoration:none;color:#333;font-weight:600;
+  background:linear-gradient(45deg,#ffd6ec,#e0f7fa,#f3e8ff);
+  box-shadow:0 4px 10px rgba(0,0,0,0.12);
+  transition:.3s;
 }
 .big-nav-buttons a:hover {filter:brightness(1.1);}
 
 /* Sidebar */
-#mySidebar {background:linear-gradient(#ffe0ef,#e3f2fd,#ede7f6);} 
+#mySidebar {background:linear-gradient(#ffe0ef,#e3f2fd,#ede7f6);} 
 .w3-sidebar .w3-button:hover {background:#f8bbd0!important;}
 
 /* Footer */
 footer {background:#fafafa;border-radius:20px;}
 
-/* Task Image Styling (consolidated from the body) */
-.task-img {
-  width: auto;       /* maintain natural width */
-  max-width: 250px;  /* set a max width */
-  height: auto;      /* maintain aspect ratio */
-  display: block;    /* center with margin auto */
-  margin: 0 auto 5px auto; /* center horizontally, small bottom space */
-  border-radius: 5px;
-}
 </style>
 </head>
 
 <body>
 
+<!-- Sidebar -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
 style="display:none;z-index:2;width:40%;min-width:300px;"
 id="mySidebar">
 
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#tasks" onclick="w3_close()" class="w3-bar-item w3-button">Tasks</a>
-  <a href="About.html" class="w3-bar-item w3-button">About</a>
-  <a href="Journal.html" class="w3-bar-item w3-button">Journals</a>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#tasks" onclick="w3_close()" class="w3-bar-item w3-button">Tasks</a>
+  <a href="About.html" class="w3-bar-item w3-button">About</a>
+  <a href="Journal.html" class="w3-bar-item w3-button">Journals</a>
 </nav>
 
+<!-- Top menu -->
 <div class="w3-top fade">
-  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto; border-radius:0 0 18px 18px;">
-    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
-    <div class="w3-right w3-padding-16">STECian Studybooks 2025</div>
-    <div class="w3-center w3-padding-16"><b>My Immersion Portfolio</b></div>
-  </div>
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto; border-radius:0 0 18px 18px;">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">STECian Studybooks 2025</div>
+    <div class="w3-center w3-padding-16"><b>My Immersion Portfolio</b></div>
+  </div>
 </div>
 
+<!-- PAGE CONTENT -->
 <div class="w3-main w3-content w3-padding fade" style="max-width:1200px;margin-top:100px;">
 
+<!-- Navigation buttons -->
 <div class="big-nav-buttons w3-center fade">
-  <a href="About.html"target="_blank">📌ABOUT PAGE please click</a>
-  <a href="Journal.html"target="_blank">📘 JOURNALS please click</a>
+  <a href="About.html"target="_blank">📌ABOUT PAGE please click</a>
+  <a href="Journal.html"target="_blank">📘 JOURNALS please click</a>
 </div>
 
 <h2 class="w3-center" id="tasks"><b>My Immersion Tasks</b></h2>
-      
+      
+<style>
+.task-img {
+  width: auto;       /* maintain natural width */
+  max-width: 250px;  /* set a max width */
+  height: auto;      /* maintain aspect ratio */
+  display: block;    /* center with margin auto */
+  margin: 0 auto 5px auto; /* center horizontally, small bottom space */
+  border-radius: 5px;
+}
+</style>
+
+  <style>
+.task-img {
+  width: auto;       /* maintain natural width */
+  max-width: 250px;  /* set a max width */
+  height: auto;      /* maintain aspect ratio */
+  display: block;    /* center with margin auto */
+  margin: 0 auto 5px auto; /* center horizontally, small bottom space */
+  border-radius: 5px;
+}
+</style>
+  
+<!-- First Row -->
+<!-- This row has 4 items, so w3-quarter is correct -->
 <div class="w3-row-padding w3-padding-16 w3-center">
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Checking & Frequency of Error</b></h3>
-    <img src="checking.jpg" class="task-img">
-    <p>Checked answer sheets, verified answer keys, and calculated student error frequency to improve lessons.</p>
-  </div>
+  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
+    <h3><b>Checking & Frequency of Error</b></h3>
+    <img src="checking.jpg" class="task-img">
+    <p>Checked answer sheets, verified answer keys, and calculated student error frequency to improve lessons.</p>
+  </div>
 
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Grading & Masterlists</b></h3>
-    <img src="spreadsheet.PNG" class="task-img">
-    <p>Graded assignments, updated records, and organized masterlists using Excel and Google Sheets.</p>
-  </div>
+  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
+    <h3><b>Grading & Masterlists</b></h3>
+    <img src="spreadsheet.PNG" class="task-img">
+    <p>Graded assignments, updated records, and organized masterlists using Excel and Google Sheets.</p>
+  </div>
 
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Collecting & Sorting Outputs</b></h3>
-    <img src="file management.jpg" class="task-img">
-    <p>Collected, sorted, and organized daily class outputs to maintain teacher workflow.</p>
-  </div>
+  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
+    <h3><b>Collecting & Sorting Outputs</b></h3>
+    <img src="file management.jpg" class="task-img">
+    <p>Collected, sorted, and organized daily class outputs to maintain teacher workflow.</p>
+  </div>
 
-  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Classroom Assistance</b></h3>
-    <img src="report to maam Abayon.jpg" class="task-img">
-    <p>Assisted teachers with tasks, monitored activities, and supported classroom operations.</p>
-  </div>
+  <div class="w3-quarter w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
+    <h3><b>Classroom Assistance</b></h3>
+    <img src="report to maam Abayon.jpg" class="task-img">
+    <p>Assisted teachers with tasks, monitored activities, and supported classroom operations.</p>
+  </div>
 </div>
 
+<!-- Second Row - FIX APPLIED: Changed w3-quarter to w3-third for 3 items, and corrected image class -->
 <div class="w3-row-padding w3-padding-16 w3-center">
-  <div class="w3-third w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Collaboration with Other Immersionists</b></h3>
-    <img src="me with ally.jpg" class="task-img">
-    <p>Worked with fellow interns to coordinate tasks, share strategies, and improve efficiency.</p>
-  </div>
+  <div class="w3-third w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
+    <h3><b>Collaboration with Other Immersionists</b></h3>
+    <img src="me with ally.jpg" class="task-img">
+    <p>Worked with fellow interns to coordinate tasks, share strategies, and improve efficiency.</p>
+  </div>
 
-  <div class="w3-third w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Scholarships & Applications</b></h3>
-    <img src="DOST.jpg" class="task-img">
-    <p>Researched and submitted scholarship applications to enhance personal and academic growth.</p>
-  </div>
+  <div class="w3-third w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
+    <h3><b>Scholarships & Applications</b></h3>
+    <img src="DOST.jpg" class="task-img">
+    <p>Researched and submitted scholarship applications to enhance personal and academic growth.</p>
+  </div>
 
-  <div class="w3-third w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
-    <h3><b>Graphic Design & Layout</b></h3>
-    <img src="canva layout.PNG" class="task-img">
-    <p>Designed posters, presentations, and layouts using Canva and PowerPoint for school events.</p>
-  </div>
+  <div class="w3-third w3-margin-bottom w3-card w3-padding-16 w3-hover-shadow">
+    <h3><b>Graphic Design & Layout</b></h3>
+    <img src="canva layout.PNG" class="task-img">
+    <p>Designed posters, presentations, and layouts using Canva and PowerPoint for school events.</p>
+  </div>
 </div>
 
-  
+  
 <div class="w3-padding-32">
-      <h4><b>A Student Intern from STEC</b></h4>
-      <h6><i>Dedicated, Organized, and Eager to Learn</i></h6>
-      <p>
-        Hi! My name is Ayenne Samuelle N. Domingo, from Grade 12- HUMMS LAW. I aspire to be first a professional teacher 
-        in SPED OR ECE then become an attorney someday. I am a senior high school student from the Science and Technology Education Center (STEC). 
-        Through immersion, I developed real-world skills in documentation, grading, professionalism, 
-        and communication. My tasks helped me understand what it means to work in an educational environment, 
-        collaborate with teachers, and support academic operations efficiently.
-      </p>
-</div>
+      <h4><b>A Student Intern from STEC</b></h4>
+      <h6><i>Dedicated, Organized, and Eager to Learn</i></h6>
+      <p>
+        Hi! My name is Ayenne Samuelle N. Domingo, from Grade 12- HUMMS LAW. I aspire to be first a proffesional teacher 
+        in SPED OR ECE then become an attorney somedayI am a senior high school student from the Science and Technology Education Center (STEC). 
+        Through immersion, I developed real-world skills in documentation, grading, professionalism, 
+        and communication. My tasks helped me understand what it means to work in an educational environment, 
+        collaborate with teachers, and support academic operations efficiently.
+      </p>
+    </div>
+  </div>
 
+  <!-- ABOUT SECTION -->
+  <div class="w3-container w3-padding-32 w3-animate-left">  
+    <h3>About Me as an Immersion Student</h3><br>
+    <img src="my face lol..PNG" alt="Me" class="w3-image" style="display:block;margin:auto" width="200" height="200">
+  <!-- JOURNALS SECTION -->
+  <div class="w3-container w3-padding-32 w3-center">
+    <h3>Immersion Daily Journals</h3>
+    <p>Here are some of the reflections and experiences I wrote during my immersion:</p>
 
-<div class="w3-container w3-padding-32 w3-animate-left">  
-  <h3>About Me as an Immersion Student</h3><br>
-  <img src="my face lol..PNG" alt="Me" class="w3-image" style="display:block;margin:auto" width="200" height="200">
-</div> 
+    <ul class="w3-ul w3-hoverable w3-large" style="max-width:600px;margin:auto;">
+      <li class="w3-padding-16">📘 Journal No. 1 — First day experiences and expectations</li>
+      <li class="w3-padding-16">📘 Journal No. 2 — Learning how to check and compute errors</li>
+      <li class="w3-padding-16">📘 Journal No. 3 — Helping with grading and spreadsheets</li>
+      <li class="w3-padding-16">📘 Journal No. 4 — Observations on teachers' workflow</li>
+      <li class="w3-padding-16">📘 Journal No. 5 — Improving efficiency and accuracy</li>
+      <li class="w3-padding-16">📘 Journal No. 6 — Classroom tasks and time management</li>
+      <li class="w3-padding-16">📘 Journal No. 7 — Collecting outputs and organization</li>
+      <li class="w3-padding-16">📘 Journal No. 8 — Assisting in document preparation</li>
+      <li class="w3-padding-16">📘 Journal No. 9 — Layouting and creative work</li>
+      <li class="w3-padding-16">📘 Journal No. 10 — Final reflections and what I learned</li>
+    </ul>
+  </div>
 
-
-<div class="w3-container w3-padding-32 w3-center">
-  <h3>Immersion Daily Journals</h3>
-  <p>Here are some of the reflections and experiences I wrote during my immersion:</p>
-
-  <ul class="w3-ul w3-hoverable w3-large" style="max-width:600px;margin:auto;">
-    <li class="w3-padding-16">📘 Journal No. 1 — First day experiences and expectations</li>
-    <li class="w3-padding-16">📘 Journal No. 2 — Learning how to check and compute errors</li>
-    <li class="w3-padding-16">📘 Journal No. 3 — Helping with grading and spreadsheets</li>
-    <li class="w3-padding-16">📘 Journal No. 4 — Observations on teachers' workflow</li>
-    <li class="w3-padding-16">📘 Journal No. 5 — Improving efficiency and accuracy</li>
-    <li class="w3-padding-16">📘 Journal No. 6 — Classroom tasks and time management</li>
-    <li class="w3-padding-16">📘 Journal No. 7 — Collecting outputs and organization</li>
-    <li class="w3-padding-16">📘 Journal No. 8 — Assisting in document preparation</li>
-    <li class="w3-padding-16">📘 Journal No. 9 — Layouting and creative work</li>
-    <li class="w3-padding-16">📘 Journal No. 10 — Final reflections and what I learned</li>
-  </ul>
+  <hr>
 </div>
 
 <hr>
 
+<style>
+.task-img {
+  width: auto;       /* maintain natural width */
+  max-width: 250px;  /* set a max width */
+  height: auto;      /* maintain aspect ratio */
+  display: block;    /* center with margin auto */
+  margin: 0 auto 5px auto; /* center horizontally, small bottom space */
+  border-radius: 5px;
+}
+</style>
+<!-- Contests Section -->
 <h2 class="w3-center"><b>Contests I Won During Immersion</b></h2>
 <div class="w3-row-padding fade">
-  <div class="w3-third w3-margin-bottom w3-card">
-    <div class="w3-container"><h3>Cebu Young Diplomat Model United Nations</h3>
-    <img src="cebmun awarding.PNG" style="width:100%"><p>I got to interact with young dipomats all over the country as well as be coached by different chairs in our council on climate change</p></div></div>
+  <div class="w3-third w3-margin-bottom w3-card">
+    <div class="w3-container"><h3>Cebu Young Diplomat Model United Nations</h3>
+    <img src="cebmun awarding.PNG" style="width:100%"><p>I got to interact with young dipomats all over the country as well as be coached by different chairs in our council on climate change</p></div></div>
 
-  <div class="w3-third w3-margin-bottom w3-card">
-    <div class="w3-container"><h3>Palm Grass Extemporaneous Speech</h3>
-    <img src="placard.jpg" style="width:100%"><p>An extemporaneous speech contest in Palm Grass Heritage Cebu Division Level which I won second place.</p></div></div>
+  <div class="w3-third w3-margin-bottom w3-card">
+    <div class="w3-container"><h3>Palm Grass Extemporaneous Speech</h3>
+    <img src="placard.jpg" style="width:100%"><p>An extemporaneous speech contest in Palm Grass Heritage Cebu Division Level which I won second place.</p></div></div>
 
-  <div class="w3-third w3-margin-bottom w3-card">
-    <div class="w3-container"><h3>John Locke Institute (Oxford) Admission</h3>
-    <img src="john locke.PNG" style="width:100%"><p>I was accepted into the JLI Oxford Summer School in Singapore! although I didn't end up going</p></div></div>
+  <div class="w3-third w3-margin-bottom w3-card">
+    <div class="w3-container"><h3>John Locke Institute (Oxford) Admission</h3>
+    <img src="john locke.PNG" style="width:100%"><p>I was accepted into the JLI Oxford Summer School in Singapore! although I didn't end up going</p></div></div>
 </div>
 
 <hr>
 
+<!-- Fun Section -->
 <h2 class="w3-center"><b>Things I Did for Fun</b></h2>
 <div class="w3-row-padding w3-margin-top fade">
-  <div class="w3-third w3-card w3-margin-bottom"><h3>Watched Anime</h3><img src="anime pic.jpg" style="width:100%"></div>
-  <div class="w3-third w3-card w3-margin-bottom"><h3>Made Fuzzy Wire Flowers</h3><img src="fuzzy wire.jpg" style="width:75%"></div>
-  <div class="w3-third w3-card w3-margin-bottom"><h3>Art</h3><img src="art.jpg" style="width:75%"></div>
+  <div class="w3-third w3-card w3-margin-bottom"><h3>Watched Anime</h3><img src="anime pic.jpg" style="width:100%"></div>
+  <div class="w3-third w3-card w3-margin-bottom"><h3>Made Fuzzy Wire Flowers</h3><img src="fuzzy wire.jpg" style="width:75%"></div>
+  <div class="w3-third w3-card w3-margin-bottom"><h3>Art</h3><img src="art.jpg" style="width:75%"></div>
 </div>
 
 <hr>
 
+<!-- Start: Immersion Video Documentation Section (W3.CSS Adapted and Fixed) -->
 <div class="w3-container w3-center w3-padding-48 fade">
-        <div class="w3-card w3-padding-32 w3-dark-gray w3-round-large w3-text-white" style="background-color: #7b4bff; box-shadow: 0 8px 30px rgba(123, 75, 255, 0.4);">
-        <h2 class="w3-xxlarge w3-margin-bottom" style="color:white; font-weight: 800; letter-spacing: 2px;">
-            Watch the Immersion Highlights
-        </h2>
-        <p class="w3-medium w3-opacity w3-margin-bottom">
-            Experience my work immersion journey in motion! Due to file size limitations, the full video is hosted securely on Google Drive.
-        </p>
+    <!-- Reduced padding in the container and the card -->
+    <div class="w3-card w3-padding-32 w3-dark-gray w3-round-large w3-text-white" style="background-color: #7b4bff; box-shadow: 0 8px 30px rgba(123, 75, 255, 0.4);">
+        <h2 class="w3-xxlarge w3-margin-bottom" style="color:white; font-weight: 800; letter-spacing: 2px;">
+            Watch the Immersion Highlights
+        </h2>
+        <p class="w3-medium w3-opacity w3-margin-bottom">
+            Experience my work immersion journey in motion! Due to file size limitations, the full video is hosted securely on Google Drive.
+        </p>
 
-                <a href="https://drive.google.com/file/d/1p5i_myBNiGVEGS87g6YMPSIJ7SYOLa_B/view?fbclid=IwY2xjawOfZchleHRuA2FlcQIxMQBzcnRjBmFwcF9pZA80Mzc2MjYzMTY5NzM3ODgAAR5GpLHW1vR9E86KFjXd-03dvf-hIDT6FlwvrRP3aGa88bzXfcxv_79b1ffdNw_aem_jgb6JMC2flK8uPl465p5fw" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="w3-button w3-large w3-round-xxlarge w3-padding w3-hover-opacity w3-animate-opacity"
-           style="background-color: #ff4da6; color: white; transition: background-color 0.3s; box-shadow: 0 6px 20px rgba(255, 77, 166, 0.4);">
-            ▶️ Watch Full Video on Google Drive
-        </a>
-    </div>
+        <!-- Video Call-to-Action Button - Reduced font size and padding -->
+        <a href="https://drive.google.com/file/d/1p5i_myBNiGVEGS87g6YMPSIJ7SYOLa_B/view?fbclid=IwY2xjawOfZchleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA80Mzc2MjYzMTY5NzM3ODgAAR5GpLHW1vR9E86KFjXd-03dvf-hIDT6FlwvrRP3aGa88bzXfcxv_79b1ffdNw_aem_jgb6JMC2flK8uPl465p5fw" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="w3-button w3-large w3-round-xxlarge w3-padding w3-hover-opacity w3-animate-opacity"
+           style="background-color: #ff4da6; color: white; transition: background-color 0.3s; box-shadow: 0 6px 20px rgba(255, 77, 166, 0.4);">
+            ▶️ Watch Full Video on Google Drive
+        </a>
+    </div>
 </div>
+<!-- End: Immersion Video Documentation Section (W3.CSS Adapted and Fixed) -->
+
+
 <footer class="w3-row-padding w3-padding-32 fade">
-  <div class="w3-third"><h3><b>IMMERSION PORTFOLIO</b></h3><p>My journey, tasks, and accomplishments.</p></div>
-  <div class="w3-third"><h3><b>RELATED WORK</b></h3><ul class="w3-ul"><li>Classroom Work</li><li>Reflections</li></ul></div>
-  <div class="w3-third"><h3><b>KEYWORDS</b></h3><p><span class="w3-tag w3-purple">Immersion</span> <span class="w3-tag w3-blue">STEC</span> <span class="w3-tag w3-pink">Education</span></p></div>
+  <div class="w3-third"><h3><b>IMMERSION PORTFOLIO</b></h3><p>My journey, tasks, and accomplishments.</p></div>
+  <div class="w3-third"><h3><b>RELATED WORK</b></h3><ul class="w3-ul"><li>Classroom Work</li><li>Reflections</li></ul></div>
+  <div class="w3-third"><h3><b>KEYWORDS</b></h3><p><span class="w3-tag w3-purple">Immersion</span> <span class="w3-tag w3-blue">STEC</span> <span class="w3-tag w3-pink">Education</span></p></div>
 </footer>
 
-</div> <script>
+</div>
+
+<script>
 function w3_open(){document.getElementById("mySidebar").style.display="block";}
 function w3_close(){document.getElementById("mySidebar").style.display="none";}
 </script>
 
 </body>
 </html>
-
-
 
 
 
