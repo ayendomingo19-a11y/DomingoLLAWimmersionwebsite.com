@@ -1,332 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work Immersion Journey - A Collage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles to recreate the masonry/collage effect */
-        .collage-container {
-            /* 3 columns on larger screens */
-            column-count: 3; 
-            column-gap: 1.5rem; /* 24px */
-            padding: 1.5rem;
-        }
+<title>My Work Immersion Journey - A Collage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-        .collage-item {
-            /* Ensures items don't break across columns and maintains structure */
-            break-inside: avoid;
-            margin-bottom: 1.5rem;
-            display: inline-block;
-            width: 100%;
-        }
+  /* --- THE COLLAGE MAGIC --- */
+  .collage-container {
+    column-count: 3; 
+    column-gap: 15px;
+    padding: 15px;
+  }
 
-        /* Styling for the callout/note blocks (Using a light yellow/cream for notes) */
-        .collage-note {
-            background-color: #fcf8e3; /* Light Yellow/Cream */
-            /* FIX: Corrected CSS property here, previously had an error */
-            border-left: 5px solid #fbbf24; /* Amber border for contrast */
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 1024px) { /* Tablet/Smaller Desktop */
-            .collage-container {
-                column-count: 2;
-            }
-        }
+  .collage-item {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
 
-        @media (max-width: 640px) { /* Mobile */
-            .collage-container {
-                column-count: 1;
-            }
-        }
-        /* Custom font import (Inter is Tailwind default, but specifying here for clarity) */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  .collage-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  /* Styling for the text notes */
+  .collage-text-note {
+    background-color: #fcf8e3; /* Light yellow/cream for notes */
+    border-left: 5px solid #ffeb3b; /* Yellow border */
+    padding: 15px;
+    font-style: italic;
+    color: #555;
+  }
+
+  /* Responsive: 2 columns on tablets */
+  @media screen and (max-width: 800px) {
+    .collage-container {
+      column-count: 2;
+    }
+  }
+
+  /* Responsive: 1 column on mobile phones */
+  @media screen and (max-width: 500px) {
+    .collage-container {
+      column-count: 1;
+    }
+  }
+</style>
 </head>
-<body class="text-gray-800">
+<body class="w3-light-grey">
 
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-teal-600">AYENNE'S JOURNAL</a>
-            <nav class="space-x-4 flex items-center">
-                <a href="#" class="text-gray-600 hover:text-teal-600 transition duration-150">Daily Logs</a>
-                <a href="#" class="text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg shadow-md transition duration-150">About Immersion</a>
-            </nav>
-        </div>
-    </header>
+<div class="w3-bar w3-white w3-border-bottom w3-padding">
+  <a href="#" class="w3-bar-item w3-button w3-text-teal"><b>MY JOURNAL</b></a>
+  <div class="w3-right">
+    <a href="#" class="w3-bar-item w3-button">Journal Logs</a>
+    <a href="#" class="w3-bar-item w3-button w3-teal w3-text-white w3-round">About Immersion</a>
+  </div>
+</div>
 
-    <div class="text-center py-16 bg-white">
-        <h1 class="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">My Work Immersion Journey</h1>
-        <p class="text-xl text-gray-500 max-w-2xl mx-auto">A visual summary of my learning, growth, and experiences in 2025.</p>
-    </div>
+<div class="w3-center w3-padding-32">
+  <h1><b>My Work Immersion Journey</b></h1>
+  <p class="w3-text-grey">A visual summary of my learning and experiences.</p>
+</div>
 
-    <main class="max-w-7xl mx-auto">
-        <div class="collage-container">
+<div class="collage-container">
 
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <img src="me with secretary general.jpg" class="rounded-xl shadow-lg w-full mb-4" alt="Ayenne with Secretary General"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
-                <h2 class="text-3xl font-bold mb-4 text-teal-700">Hello, Future Me!</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    This page captures the essence of my work immersion journey. It was a crucial step in developing patience, meticulous data handling skills, and professional coordination. Every day brought new insights into the realities of an educational setting.
-                </p>
-            </div>
+  <div class="collage-item w3-white w3-card w3-padding-large">
+    <img src="/images/me with secretary general.jpg" class="w3-round-large w3-margin-bottom" style="width:100%" alt="Ayenne">
+    <h3>Hello, future me!</h3>
+    <p>This page captures the essence of my work immersion. It was a journey of learning, challenges, and immense personal growth. Every day brought new insights.</p>
+  </div>
 
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <h3 class="text-xl font-semibold mb-4 text-pink-600">Core Immersion Learnings</h3>
-                <ul class="space-y-3">
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Data Encoding & Validation
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Document Organization & Filing
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Team Coordination & Networking
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Public Speaking & Logistics
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Basic Graphic Design (Canva)
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="collage-item p-6 rounded-xl shadow-lg collage-note">
-                <p class="text-lg italic text-gray-700">
-                    "Being careful and double-checking all scores and names is crucial, as someone's grades are truly in our hands."
-                </p>
-            </div>
+  <img src="/images/me and my verbal commendation award.png" class="collage-item w3-card" alt="Classroom setting">
 
-            <img src="contest judges.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Team collaboration during a contest"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
+  <div class="collage-item w3-card collage-text-note">
+    <p><i>"Being careful and double-checking all scores and names is crucial, as someone's grades are in our hands."</i></p>
+  </div>
+  
+  <img src="/images/ywa.jpg" class="collage-item w3-card" alt="Working with documents">
 
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <h3 class="text-2xl font-bold mb-3 text-indigo-600">Proactive Planning Pays Off</h3>
-                <img src="DOST.jpg" class="rounded-xl shadow-md w-full my-4" alt="Researching scholarship requirements"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
-                <p class="text-gray-600 leading-relaxed text-sm">
-                    Utilizing 'free time' during immersion to compile personal documents and scout scholarship requirements (like DOST) was a major game-changer for my future plans.
-                </p>
-            </div>
-            
-            <div class="collage-item p-6 rounded-xl shadow-lg collage-note">
-                <p class="text-lg italic text-gray-700">
-                    "It is hard to scan for scores and names as it is very tedious, especially if a sheet is unorganized. Organization must always come first."
-                </p>
-            </div>
+  <img src="/images/contest judges.jpg" class="collage-item w3-card" alt="Team collaboration">
 
-            <img src="me and my verbal commendation award.png" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Verbal Commendation Award"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x500/94a3b8/FFFFFF?text=MISSING+FILE';">
-            
-            <div class="collage-item p-8 rounded-xl shadow-lg bg-indigo-600 text-white text-center hover:bg-indigo-700 transition duration-300">
-                <p class="text-xl font-extrabold mb-2">TEAMWORK MAKES THE DREAM WORK</p>
-                <p class="text-base font-semibold">Learned so much collaborating with Atom, Law, and Pounds.</p>
-            </div>
+  <div class="collage-item w3-card w3-white w3-padding">
+    <h4>Key Learnings</h4>
+    <ul class="w3-ul w3-hoverable">
+      <li>✅ Data Encoding</li>
+      <li>✅ Document Organization</li>
+      <li>✅ Team Coordination</li>
+      <li>✅ Public Speaking</li>
+      <li>✅ Graphic Design</li>
+    </ul>
+  </div>
 
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <h4 class="text-2xl font-bold text-gray-900 mb-3">A Heartfelt Thank You 🙏</h4>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    My gratitude goes to Ma'am Crischel Lyn Abayon and Ma'am Alona A. Pioquito. Their guidance provided the foundation for every skill I developed and practiced during this immersion program.
-                </p>
-            </div>
+  <img src="/images/cebmun awarding.PNG" class="collage-item w3-card" alt="Spreadsheet work">
 
-            <img src="im working.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Actual data encoding work session"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
+  <div class="collage-item w3-card collage-text-note">
+    <p><i>"It is hard to scan for scores and names as it is very tedious especially if a sheet is unorganized."</i></p>
+  </div>
 
-            <div class="collage-item p-8 rounded-xl shadow-lg bg-teal-600 text-white text-center hover:bg-teal-700 transition duration-300">
-                <p class="text-xl font-extrabold">"Preparation, creativity, and teamwork are the backbone of a successful program."</p>
-            </div>
+  <img src="/images/DOST.jpg" class="collage-item w3-card" alt="Mentorship">
+  
+  <div class="collage-item w3-card w3-padding w3-light-blue w3-text-white w3-center">
+    <b>Teamwork makes the dream work!</b><br>
+    Learned so much from Atom, Law, and Pounds.
+  </div>
 
-            <img src="manta extempo.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Presentation moment"
-                    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Work Immersion Journey - A Collage</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles to recreate the masonry/collage effect */
-        .collage-container {
-            /* 3 columns on larger screens */
-            column-count: 3; 
-            column-gap: 1.5rem; /* 24px */
-            padding: 1.5rem;
-        }
+  <img src="/images/cebmun friends.jpg" class="collage-item w3-card" alt="Organizing files">
 
-        .collage-item {
-            /* Ensures items don't break across columns and maintains structure */
-            break-inside: avoid;
-            margin-bottom: 1.5rem;
-            display: inline-block;
-            width: 100%;
-        }
+  <div class="collage-item w3-card collage-text-note">
+    <p><i>"Utilizing 'free time' to compile documents and scout scholarship requirements was a game-changer."</i></p>
+  </div>
 
-        /* Styling for the callout/note blocks (Using a light yellow/cream for notes) */
-        .collage-note {
-            background-color: #fcf8e3; /* Light Yellow/Cream */
-            /* FIX: Corrected CSS property here, previously had an error */
-            border-left: 5px solid #fbbf24; /* Amber border for contrast */
-        }
-        
-        /* Responsive adjustments */
-        @media (max-width: 1024px) { /* Tablet/Smaller Desktop */
-            .collage-container {
-                column-count: 2;
-            }
-        }
+  <img src="/images/piggies.jpg" class="collage-item w3-card" alt="Meeting a teacher">
 
-        @media (max-width: 640px) { /* Mobile */
-            .collage-container {
-                column-count: 1;
-            }
-        }
-        /* Custom font import (Inter is Tailwind default, but specifying here for clarity) */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f7f7;
-        }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body class="text-gray-800">
+  <div class="collage-item w3-white w3-card w3-padding">
+    <h4>Gratitude 🙏</h4>
+    <p>A huge thank you to Ma'am Crischel Lyn Abayon and Ma'am Alona A. Pioquito for their guidance and the invaluable experience.</p>
+  </div>
 
-    <header class="bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-teal-600">AYENNE'S JOURNAL</a>
-            <nav class="space-x-4 flex items-center">
-                <a href="#" class="text-gray-600 hover:text-teal-600 transition duration-150">Daily Logs</a>
-                <a href="#" class="text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg shadow-md transition duration-150">About Immersion</a>
-            </nav>
-        </div>
-    </header>
+  <img src="/images/im working.jpg" class="collage-item w3-card" alt="Collaborative work">
 
-    <div class="text-center py-16 bg-white">
-        <h1 class="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">My Work Immersion Journey</h1>
-        <p class="text-xl text-gray-500 max-w-2xl mx-auto">A visual summary of my learning, growth, and experiences in 2025.</p>
-    </div>
+  <div class="collage-item w3-card w3-padding w3-light-green w3-text-white w3-center">
+    <b>"Preparation, creativity, and teamwork are the backbone of a successful program."</b>
+  </div>
 
-    <main class="max-w-7xl mx-auto">
-        <div class="collage-container">
+  <img src="/images/manta extempo.jpg" class="collage-item w3-card" alt="Presenting">
 
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <img src="me with secretary general.jpg" class="rounded-xl shadow-lg w-full mb-4" alt="Ayenne with Secretary General"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
-                <h2 class="text-3xl font-bold mb-4 text-teal-700">Hello, Future Me!</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    This page captures the essence of my work immersion journey. It was a crucial step in developing patience, meticulous data handling skills, and professional coordination. Every day brought new insights into the realities of an educational setting.
-                </p>
-            </div>
+</div>
 
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <h3 class="text-xl font-semibold mb-4 text-pink-600">Core Immersion Learnings</h3>
-                <ul class="space-y-3">
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Data Encoding & Validation
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Document Organization & Filing
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Team Coordination & Networking
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Public Speaking & Logistics
-                    </li>
-                    <li class="flex items-center text-gray-700">
-                        <span class="text-green-500 mr-2 font-bold">✅</span>
-                        Basic Graphic Design (Canva)
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="collage-item p-6 rounded-xl shadow-lg collage-note">
-                <p class="text-lg italic text-gray-700">
-                    "Being careful and double-checking all scores and names is crucial, as someone's grades are truly in our hands."
-                </p>
-            </div>
-
-            <img src="contest judges.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Team collaboration during a contest"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
-
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <h3 class="text-2xl font-bold mb-3 text-indigo-600">Proactive Planning Pays Off</h3>
-                <img src="DOST.jpg" class="rounded-xl shadow-md w-full my-4" alt="Researching scholarship requirements"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
-                <p class="text-gray-600 leading-relaxed text-sm">
-                    Utilizing 'free time' during immersion to compile personal documents and scout scholarship requirements (like DOST) was a major game-changer for my future plans.
-                </p>
-            </div>
-            
-            <div class="collage-item p-6 rounded-xl shadow-lg collage-note">
-                <p class="text-lg italic text-gray-700">
-                    "It is hard to scan for scores and names as it is very tedious, especially if a sheet is unorganized. Organization must always come first."
-                </p>
-            </div>
-
-            <img src="me and my verbal commendation award.png" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Verbal Commendation Award"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x500/94a3b8/FFFFFF?text=MISSING+FILE';">
-            
-            <div class="collage-item p-8 rounded-xl shadow-lg bg-indigo-600 text-white text-center hover:bg-indigo-700 transition duration-300">
-                <p class="text-xl font-extrabold mb-2">TEAMWORK MAKES THE DREAM WORK</p>
-                <p class="text-base font-semibold">Learned so much collaborating with Atom, Law, and Pounds.</p>
-            </div>
-
-            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
-                <h4 class="text-2xl font-bold text-gray-900 mb-3">A Heartfelt Thank You 🙏</h4>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    My gratitude goes to Ma'am Crischel Lyn Abayon and Ma'am Alona A. Pioquito. Their guidance provided the foundation for every skill I developed and practiced during this immersion program.
-                </p>
-            </div>
-
-            <img src="im working.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Actual data encoding work session"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
-
-            <div class="collage-item p-8 rounded-xl shadow-lg bg-teal-600 text-white text-center hover:bg-teal-700 transition duration-300">
-                <p class="text-xl font-extrabold">"Preparation, creativity, and teamwork are the backbone of a successful program."</p>
-            </div>
-
-            <img src="manta extempo.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Presentation moment"
-                    onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
-
-
-        </div>
-    </main>
-
-    <footer class="bg-gray-800 text-white text-center py-8 mt-12">
-        <p class="text-sm">My Work Immersion Journey | Ayenne Samuelle N. Domingo</p>
-    </footer>
+<footer class="w3-container w3-center w3-padding-32 w3-dark-grey">
+  <p>My Work Immersion Journey - Ayenne Samuelle N. Domingo</p>
+</footer>
 
 </body>
-</html>';">
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Load Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to recreate the masonry/collage effect */
+        .collage-container {
+            column-count: 3; 
+            column-gap: 1.5rem; /* 24px */
+            padding: 1.5rem;
+        }
+
+        .collage-item {
+            /* Ensures items don't break across columns and maintains structure */
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* Styling for the callout/note blocks (Using a light yellow/cream for notes) */
+        .collage-note {
+            background-color: #fcf8e3; /* Light Yellow/Cream */
+            border-left: 5//fbbf24; /* Amber border for contrast */
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 1024px) { /* Tablet/Smaller Desktop */
+            .collage-container {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 640px) { /* Mobile */
+            .collage-container {
+                column-count: 1;
+            }
+        }
+        /* Custom font import (Inter is Tailwind default, but specifying here for clarity) */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar (Simplified) -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-teal-600">AYENNE'S JOURNAL</a>
+            <nav class="space-x-4 flex items-center">
+                <a href="#" class="text-gray-600 hover:text-teal-600 transition duration-150">Daily Logs</a>
+                <a href="#" class="text-white bg-teal-600 hover:bg-teal-700 px-4 py-2 rounded-lg shadow-md transition duration-150">About Immersion</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <div class="text-center py-16 bg-white">
+        <h1 class="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">My Work Immersion Journey</h1>
+        <p class="text-xl text-gray-500 max-w-2xl mx-auto">A visual summary of my learning, growth, and experiences in 2025.</p>
+    </div>
+
+    <!-- Main Collage Content Area -->
+    <main class="max-w-7xl mx-auto">
+        <div class="collage-container">
+
+            <!-- Card 1: Introduction & Photo Placeholder (me with secretary general.jpg) -->
+            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                <img src="me with secretary general.jpg" class="rounded-xl shadow-lg w-full mb-4" alt="Ayenne with Secretary General"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
+                <h2 class="text-3xl font-bold mb-4 text-teal-700">Hello, Future Me!</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    This page captures the essence of my work immersion journey. It was a crucial step in developing patience, meticulous data handling skills, and professional coordination. Every day brought new insights into the realities of an educational setting.
+                </p>
+            </div>
+
+            <!-- Card 2: Key Learnings List (from original list structure) -->
+            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold mb-4 text-pink-600">Core Immersion Learnings</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center text-gray-700">
+                        <span class="text-green-500 mr-2 font-bold">✅</span>
+                        Data Encoding & Validation
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <span class="text-green-500 mr-2 font-bold">✅</span>
+                        Document Organization & Filing
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <span class="text-green-500 mr-2 font-bold">✅</span>
+                        Team Coordination & Networking
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <span class="text-green-500 mr-2 font-bold">✅</span>
+                        Public Speaking & Logistics
+                    </li>
+                    <li class="flex items-center text-gray-700">
+                        <span class="text-green-500 mr-2 font-bold">✅</span>
+                        Basic Graphic Design (Canva)
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Card 3: Quote 1 (Crucial Grading) -->
+            <div class="collage-item p-6 rounded-xl shadow-lg collage-note">
+                <p class="text-lg italic text-gray-700">
+                    "Being careful and double-checking all scores and names is crucial, as someone's grades are truly in our hands."
+                </p>
+            </div>
+
+            <!-- Card 4: Team Collaboration Image Placeholder (contest judges.jpg) -->
+            <img src="contest judges.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Team collaboration during a contest"
+                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
+
+            <!-- Card 5: Proactive Planning / DOST Docs Placeholder (DOST.jpg) -->
+            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                <h3 class="text-2xl font-bold mb-3 text-indigo-600">Proactive Planning Pays Off</h3>
+                <img src="DOST.jpg" class="rounded-xl shadow-md w-full my-4" alt="Researching scholarship requirements"
+                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
+                <p class="text-gray-600 leading-relaxed text-sm">
+                    Utilizing 'free time' during immersion to compile personal documents and scout scholarship requirements (like DOST) was a major game-changer for my future plans.
+                </p>
+            </div>
+            
+            <!-- Card 6: Quote 2 (Tedious Scanning) -->
+            <div class="collage-item p-6 rounded-xl shadow-lg collage-note">
+                <p class="text-lg italic text-gray-700">
+                    "It is hard to scan for scores and names as it is very tedious, especially if a sheet is unorganized. Organization must always come first."
+                </p>
+            </div>
+
+            <!-- Card 7: Achievement Image Placeholder (me and my verbal commendation award.png) -->
+            <img src="me and my verbal commendation award.png" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Verbal Commendation Award"
+                 onerror="this.onerror=null; this.src='https://placehold.co/600x500/94a3b8/FFFFFF?text=MISSING+FILE';">
+            
+            <!-- Card 8: Teamwork Callout -->
+            <div class="collage-item p-8 rounded-xl shadow-lg bg-indigo-600 text-white text-center hover:bg-indigo-700 transition duration-300">
+                <p class="text-xl font-extrabold mb-2">TEAMWORK MAKES THE DREAM WORK</p>
+                <p class="text-base font-semibold">Learned so much collaborating with Atom, Law, and Pounds.</p>
+            </div>
+
+            <!-- Card 9: Final Gratitude Block (like the original) -->
+            <div class="collage-item bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                <h4 class="text-2xl font-bold text-gray-900 mb-3">A Heartfelt Thank You 🙏</h4>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    My gratitude goes to Ma'am Crischel Lyn Abayon and Ma'am Alona A. Pioquito. Their guidance provided the foundation for every skill I developed and practiced during this immersion program.
+                </p>
+            </div>
+
+            <!-- Card 10: Working Photo Placeholder (im working.jpg) -->
+            <img src="im working.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Actual data encoding work session"
+                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
+
+            <!-- Card 11: Final Insight Callout -->
+            <div class="collage-item p-8 rounded-xl shadow-lg bg-teal-600 text-white text-center hover:bg-teal-700 transition duration-300">
+                <p class="text-xl font-extrabold">"Preparation, creativity, and teamwork are the backbone of a successful program."</p>
+            </div>
+
+            <!-- Card 12: Public Speaking/Event Photo Placeholder (manta extempo.jpg) -->
+            <img src="manta extempo.jpg" class="collage-item rounded-xl shadow-lg hover:shadow-xl transition duration-300 object-cover" alt="Presentation moment"
+                 onerror="this.onerror=null; this.src='https://placehold.co/600x400/94a3b8/FFFFFF?text=MISSING+FILE';">
 
 
         </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center py-8 mt-12">
         <p class="text-sm">My Work Immersion Journey | Ayenne Samuelle N. Domingo</p>
     </footer>
 
 </body>
 </html>
+
 
 
 
